@@ -1,0 +1,13 @@
+function [ext1,ext2,ext3,ext4] = create_lever_pulling_c_feedbacks
+ext1 = zeros(8,4);
+ext1(7:8,3) = 1;
+ext1([3,6],4) = 1;
+ext2 = zeros(8,4);
+ext2(7:8,3) = 1;
+ext2([4,5],4) = 1;
+ext3 = zeros(8,4);
+ext3(7:8,3) = 1;
+ext3([3,5],4) = 1;
+ext4 = zeros(8,4);
+ext4(7:8,3) = 1;
+ext4([4,6],4) = 1;

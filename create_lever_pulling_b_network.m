@@ -1,0 +1,17 @@
+function [units,connections] = create_lever_pulling_b_network
+units = zeros(6,3);
+units(1,:) = [0.2,0.25,1]; 
+units(2,:) = [0.8,0.25,1]; 
+units(3,:) = [0.4,1.25,2]; 
+units(4,:) = [0.6,1.25,2]; 
+units(5,:) = [0.2,2.25,3]; 
+units(6,:) = [0.8,2.25,3];
+connections = cell(6,3);
+connections{1,3} = [5,1];
+connections{2,3} = [6,1];
+connections{3,2} = [1,0;2,1];
+connections{4,2} = [2,0;1,1];
+connections{3,3} = [5,0];
+connections{4,3} = [6,0];
+connections{5,2} = [1,1;4,1];
+connections{6,2} = [2,1;3,1];

@@ -1,0 +1,11 @@
+function [units,connections] = create_lever_pulling_a_network
+units = zeros(4,3);
+units(1,:) = [0.3,0.25,1]; 
+units(2,:) = [0.7,0.25,1]; 
+units(3,:) = [0.3,1.25,2]; 
+units(4,:) = [0.7,1.25,2]; 
+connections = cell(4,3);
+connections{1,3} = [3,1];
+connections{2,3} = [4,1];
+connections{3,2} = [1,1];
+connections{4,2} = [2,1];
